@@ -49,8 +49,18 @@ if (persona.carrera.enCurso===true){
     console.log('estado: no en curso');
 }
 
+console.log(
+    `cantidad de materias aprobadas: ${persona.carrera.cantMateriasAprobadas}`
+);
+console.log(
+    `materias aprobadas: ${persona.carrera.materiasAprobadas}`
+);
 
+const materiasAprobadas = persona.carrera.materiasAprobadas;
+for (const materia of materiasAprobadas){
+    console.log(materia);
+}
 
-
-
-
+for (const materia of materiasAprobadas){
+    console.log(`--- ${materia}`);
+}
